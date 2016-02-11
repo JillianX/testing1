@@ -7,7 +7,13 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_right" id="169"></block>
+      <block type="movement_leftmotor" id="195" inline="true">
+        <value name="MOVLEFT">
+          <block type="math_number" id="202">
+            <field name="NUM">90</field>
+          </block>
+        </value>
+      </block>
     </statement>
   </block>
 </xml>
