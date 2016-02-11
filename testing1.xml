@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="led_select" id="326" inline="true" x="83" y="-127">
-    <field name="ACTION">ON</field>
+    <field name="ACTION">FLASH</field>
     <value name="LED">
       <block type="math_number" id="337">
         <field name="NUM">0</field>
@@ -8,7 +8,7 @@
     </value>
     <next>
       <block type="led_select" id="327" inline="true">
-        <field name="ACTION">ON</field>
+        <field name="ACTION">FLASH</field>
         <value name="LED">
           <block type="math_number" id="338">
             <field name="NUM">1</field>
@@ -16,7 +16,7 @@
         </value>
         <next>
           <block type="led_select" id="328" inline="true">
-            <field name="ACTION">ON</field>
+            <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="math_number" id="339">
                 <field name="NUM">2</field>
@@ -39,7 +39,17 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_reverse" id="511"></block>
+                      <block type="led_select" id="562" inline="true">
+                        <field name="ACTION">ON</field>
+                        <value name="LED">
+                          <block type="math_number" id="571">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_reverse" id="511"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
