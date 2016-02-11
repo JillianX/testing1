@@ -1,5 +1,13 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="sensor_spectrometer" id="1" x="243" y="79">
-    <field name="LIGHT">BLUE</field>
+  <block type="controls_whileUntil" id="9" inline="false" x="236" y="91">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_object" id="134">
+        <field name="OBJECT">LEFTFRONT</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_right" id="169"></block>
+    </statement>
   </block>
 </xml>
