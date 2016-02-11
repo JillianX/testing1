@@ -1,1 +1,57 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="619" inline="false" x="77" y="-205">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="693">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="663" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="701" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="851">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="742">
+            <next>
+              <block type="oled_cleardisplay" id="751"></block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="oled_cleardisplay" id="771">
+            <next>
+              <block type="oled_drawtext" id="795">
+                <field name="TEXT"></field>
+                <next>
+                  <block type="oled_setcursor" id="810" inline="true">
+                    <next>
+                      <block type="oled_linerect" id="825">
+                        <field name="OBJECT">LINE</field>
+                        <next>
+                          <block type="oled_setcursor" id="834" inline="true">
+                            <next>
+                              <block type="movement_stop" id="844"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
