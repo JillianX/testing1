@@ -20,6 +20,18 @@
                 <field name="NUM">90</field>
               </block>
             </value>
+            <next>
+              <block type="robot_delay" id="244" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="252">
+                    <field name="NUM">25</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stutter" id="268"></block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
