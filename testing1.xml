@@ -39,17 +39,21 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_setmotors" id="410" inline="true">
-                        <value name="BOTHMOVLEFT">
-                          <block type="math_number" id="412">
-                            <field name="NUM">60</field>
+                      <block type="movement_reverse" id="511">
+                        <next>
+                          <block type="movement_setmotors" id="410" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="412">
+                                <field name="NUM">60</field>
+                              </block>
+                            </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="411">
+                                <field name="NUM">60</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
-                        <value name="BOTHMOVRIGHT">
-                          <block type="math_number" id="411">
-                            <field name="NUM">60</field>
-                          </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
