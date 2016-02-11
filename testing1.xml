@@ -1,6 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="9" inline="false" x="236" y="91">
     <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_line" id="235">
+        <field name="LINE">LEFT</field>
+      </block>
+    </value>
     <statement name="DO">
       <block type="movement_leftmotor" id="195" inline="true">
         <value name="MOVLEFT">
