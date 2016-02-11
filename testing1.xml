@@ -1,11 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="9" inline="false" x="236" y="91">
     <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="sensor_object" id="134">
-        <field name="OBJECT">LEFTFRONT</field>
-      </block>
-    </value>
     <statement name="DO">
       <block type="movement_leftmotor" id="195" inline="true">
         <value name="MOVLEFT">
@@ -13,6 +8,15 @@
             <field name="NUM">90</field>
           </block>
         </value>
+        <next>
+          <block type="movement_rightmotor" id="226" inline="true">
+            <value name="MOVRIGHT">
+              <block type="math_number" id="227">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
