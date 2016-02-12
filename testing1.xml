@@ -22,6 +22,14 @@
             </value>
           </block>
         </statement>
+        <statement name="ELSE">
+          <block type="led_select" id="159" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="multimedia_pollwav" id="160"></block>
+            </value>
+          </block>
+        </statement>
       </block>
     </statement>
   </block>
