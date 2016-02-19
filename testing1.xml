@@ -1,60 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="40" inline="true" x="143" y="104">
-    <field name="ACTION">ON</field>
-    <value name="LED">
-      <block type="math_number" id="54">
-        <field name="NUM">0</field>
+  <block type="controls_repeat" id="73" inline="true" x="115" y="113">
+    <value name="TIMES">
+      <block type="math_number" id="80">
+        <field name="NUM">2</field>
       </block>
     </value>
-    <next>
-      <block type="led_select" id="41" inline="true">
-        <field name="ACTION">ON</field>
-        <value name="LED">
-          <block type="math_number" id="55">
-            <field name="NUM">1</field>
-          </block>
-        </value>
+    <statement name="DO">
+      <block type="movement_forward" id="90">
         <next>
-          <block type="led_select" id="42" inline="true">
-            <field name="ACTION">ON</field>
-            <value name="LED">
-              <block type="math_number" id="56">
-                <field name="NUM">2</field>
+          <block type="robot_delay" id="92" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="109">
+                <field name="NUM">2500</field>
               </block>
             </value>
-            <next>
-              <block type="led_select" id="46" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="57">
-                    <field name="NUM">3</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="led_select" id="43" inline="true">
-                    <field name="ACTION">ON</field>
-                    <value name="LED">
-                      <block type="math_number" id="58">
-                        <field name="NUM">4</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="44" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="59">
-                            <field name="NUM">5</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </next>
       </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="102"></block>
     </next>
   </block>
 </xml>
