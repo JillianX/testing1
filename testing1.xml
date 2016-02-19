@@ -46,6 +46,11 @@
                             <field name="NUM">5</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_drawtext" id="51">
+                            <field name="TEXT">Jillian did it</field>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
