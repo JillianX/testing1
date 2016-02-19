@@ -51,7 +51,7 @@
                             <field name="TEXT">Jillian did it</field>
                             <next>
                               <block type="oled_color" id="77">
-                                <field name="OBJECT">GREEN</field>
+                                <field name="OBJECT">BLACK</field>
                               </block>
                             </next>
                           </block>
