@@ -1,5 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="103" inline="false" x="183" y="127">
+    <value name="IF0">
+      <block type="sensor_spectrometer" id="119">
+        <field name="LIGHT">BLUE</field>
+      </block>
+    </value>
     <statement name="DO0">
       <block type="movement_setmotors" id="87" inline="true">
         <value name="BOTHMOVLEFT">
