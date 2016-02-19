@@ -49,6 +49,11 @@
                         <next>
                           <block type="oled_drawtext" id="51">
                             <field name="TEXT">Jillian did it</field>
+                            <next>
+                              <block type="oled_color" id="77">
+                                <field name="OBJECT">GREEN</field>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
