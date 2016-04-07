@@ -98,7 +98,20 @@
               </block>
             </statement>
             <next>
-              <block type="movement_stop" id="109"></block>
+              <block type="movement_stutter" id="129">
+                <next>
+                  <block type="robot_delay" id="167" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="174">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="109"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
